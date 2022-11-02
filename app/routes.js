@@ -8,7 +8,7 @@ function getTodos(res) {
             res.send(err);
         }
 
-        res.json(todos); // return all todos in JSON format
+        res.json("{\"nome\":\"dsd\"}"); // return all todos in JSON format
     });
 };
 

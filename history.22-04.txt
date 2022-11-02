@@ -1,0 +1,366 @@
+    1  ping www.google.com
+    2  exit
+    3  wget bbremoto.bb.com.br/CSHELL/snx_install_linux30.sh
+    4  --no-check-certificate
+    5  wget bbremoto.bb.com.br/CSHELL/snx_install_linux30.sh --no-check-certificate
+    6  ls -la
+    7  sudo apt-get install libgtk2.0-0:i386 libx11-6:i386 libpam0g:i386 libstdc++6:i386 libstdc++5:i386 libnss3-tools
+    8  chmod +3 snx_install_linux30.sh 
+    9  chmod +x snx_install_linux30.sh 
+   10  ls -ltr
+   11  ./snx_install_linux30.sh 
+   12  cat snx_install_linux30.sh 
+   13  sh -c "$(wget https://raw.githubusercontent.com/starlone/dotfiles/master/bootstrap.sh -O -)"
+   14  ls -la
+   15  sh -c "$(wget https://raw.githubusercontent.com/starlone/dotfiles/master/bootstrap.sh -O -)"
+   16  git clone https://github.com/starlone/dotfiles.git
+   17  ls -ltr
+   18  cd dotfiles/
+   19  git pull
+   20  cd ..
+   21  ./dotfiles/install.sh 
+   22  cat dotfiles/dependencies-vscode.txt 
+   23  cd dotfiles/
+   24  ./install.sh 
+   25  cd ..
+   26  mkdir Projetos
+   27  ls -la
+   28  ./dotfiles/install.sh 
+   29  cat dotfiles/install.sh 
+   30  ./dotfiles/install.sh pyenv
+   31  ./dotfiles/install.sh python
+   32  sudo apt install pip3
+   33  sudo apt install pip
+   34  ./dotfiles/install.sh python
+   35  cat dotfiles/install.sh 
+   36  ./dotfiles/install.sh tmux
+   37  ./dotfiles/install.sh snap
+   38  ./dotfiles/install.sh shell
+   39  ./dotfiles/install.sh zsh
+   40  sudo apt install curl
+   41  ./dotfiles/install.sh zsh
+   42  ./dotfiles/install.sh
+   43  cat dotfiles/install.sh 
+   44  ./dotfiles/install.sh fzf
+   45  ./dotfiles/install.sh pyenv
+   46  ./dotfiles/install.sh nodejs
+   47  sudo apt install egwt
+   48  sudo apt install wget
+   49  sudo apt install terminator
+   50  exit
+   51  ls -la
+   52  sudo ./snx_install_linux30.sh 
+   53  exit
+   54  ng generate pages
+   55  ng serve
+   56  ls -la
+   57  ./dotfiles/install.sh 
+   58  cat dotfiles/install.sh 
+   59  ./dotfiles/install.sh vscode
+   60  ./dotfiles/install.sh 
+   61  cat dotfiles/install.sh 
+   62  cat dotfiles/dependencies-vscode.txt 
+   63  code --install-extension MS-CEINTL.vscode-language-pack-pt-BR
+   64  code --install-extension ms-python.python
+   65  code --install-extension vscjava.vscode-java-pack
+   66  code --install-extension redhat.vscode-quarkus
+   67  cd Projetos/
+   68  ls -la
+   69  git clone https://github.com/Kalangos/aerobilling.git
+   70  ls -la
+   71  mkdir aerobilling
+   72  cd aerobilling/
+   73  git remote add origin https://github.com/Kalangos/aerobilling.git
+   74  git remote add origin github.com/Kalangos/aerobilling.git
+   75  git remote set-url https://github.com/Kalangos/aerobilling.git
+   76  gh
+   77  sudo apt install gh
+   78  gh
+   79  gh auth login
+   80  cd ..
+   81  rm -rf aerobilling/
+   82  git clone https://github.com/Kalangos/aerobilling.git
+   83  cd aerobilling/
+   84  ls -la
+   85  ng
+   86  ng -v
+   87  npm install -g @angular/cli
+   88  ng
+   89  docker
+   90  docker -v
+   91  sudo apt-get remove docker docker-engine docker.io containerd runc
+   92  sudo apt-get update
+   93  sudo apt-get install     ca-certificates     curl     gnupg     lsb-release
+   94  sudo apt autoremove
+   95  sudo mkdir -p /etc/apt/keyrings
+   96  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+   97  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+   98    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   99  sudo apt-get update
+  100  sudo chmod a+r /etc/apt/keyrings/docker.gpg
+  101  sudo apt-get update
+  102  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+  103  sudo docker run hello-world
+  104  docker run -it ubuntu bash
+  105  sudo docker run -it ubuntu bash
+  106  ls -la
+  107  code .
+  108  python -m
+  109  python3 -m
+  110  cd /usr/local/bin/
+  111  ls -la
+  112  python3
+  113  ln -s python3 /usr/local/bin/python
+  114  sudo cp python3 python3bkp
+  115  ls -la
+  116  ls -la pyth
+  117  ls -la pyth*
+  118  ls -la p*
+  119  python3
+  120  cd ..
+  121  cd sbin/
+  122  ls -la
+  123  ls -la py*
+  124  ls -la p*
+  125  ls -la /usr/bin/p*
+  126  ln -sf python3 python
+  127  sudo ln -sf python3 python
+  128  ls -la /usr/bin/p*
+  129  ls -la /usr/bin/py*
+  130  ls -la /usr/bin/pyth*
+  131  python3
+  132  ls -la
+  133  ls -la /usr/bin/pyth*
+  134  cd ~
+  135  cd Projetos/
+  136  ls -la
+  137  python3 -m http.server 80
+  138  sudo python3 -m http.server 80
+  139  ipconfig
+  140  ifconfig
+  141  sudo apt install net-tools
+  142  ifconfig
+  143  sudo python3 -m http.server 80
+  144  ping 172.30.99.237
+  145  git clone https://github.com/strongloop/microgateway.git
+  146  cd microgateway/
+  147  ls -la
+  148  npm insyall
+  149  npm install
+  150  npm audit fix
+  151  npm audit fix --force
+  152  ls -la
+  153  docke-compose -v
+  154  docker-compose -v
+  155  sudo apt  install docker-compose
+  156  docker-compose -v
+  157  docker-compose up
+  158  ls -la
+  159  docker -v
+  160  sudo docker service status
+  161  sudo service docker status
+  162  docker-compose up
+  163  sudo docker-compose up
+  164  node -v
+  165  npm -v
+  166  code .
+  167  sudo docker-compose up
+  168  cd ..
+  169  mkdir ngular
+  170  cd ngular/
+  171  ng new ngular
+  172  git config --global user.email "123bruno@gmail.com"
+  173  git config --global user.name "Bruno Miranda"
+  174  ng new ngular
+  175  ls -la
+  176  rm -rf ngular
+  177  cd ..
+  178  rm -rm ngular
+  179  rm -rf ngular
+  180  ls -la
+  181  ng new angular
+  182  code .
+  183  cd angular/
+  184  code .
+  185  ng serve
+  186  clear
+  187  exit
+  188  ls -ltr
+  189  cd Downloads/
+  190  ls -ltr
+  191  sudo chmod +x snx_install_linux30.sh 
+  192  ls -la
+  193  ./snx_install_linux30.sh 
+  194  sudo ./snx_install_linux30.sh 
+  195  cd ../Projetos/
+  196  ls -la
+  197  cd Micr
+  198  cd microgateway/
+  199  ls -la
+  200  docker-compose up
+  201  sudo docker-compose up
+  202  code .
+  203  ls -la
+  204  cd ../aerobilling/
+  205  ls -al
+  206  cd ../angular/
+  207  ng test
+  208  sudo apt install chrome
+  209  cd ~/Downloads/
+  210  ls -ltr
+  211  sudo dpkg -i google-chrome-stable_current_amd64.deb 
+  212  chrome
+  213  cd -
+  214  ng test
+  215  ng serve
+  216  code .
+  217  cd ..
+  218  git clone https://github.com/bfmiranda/mongo_node_jade.git
+  219  ls -la
+  220  rm -rf mongo_node_jade/
+  221  ls -la
+  222  cd angular/
+  223  cd ..
+  224  ls -la
+  225  cd first-angular/
+  226  ls -la
+  227  git init
+  228  ls -la
+  229  cat .git
+  230  git status
+  231  code .
+  232  git status
+  233  git add *
+  234  git pull
+  235  git branch -a
+  236  git branch develop
+  237  git branch 
+  238  git checkout develop 
+  239  git status
+  240  git remote add origin https://github.com/bfmiranda/first-angular.git
+  241  git branch develop
+  242  git checkout develop 
+  243  git push -u origin develop
+  244  cd ..
+  245  ls -la
+  246  git clone https://github.com/scotch-io/node-todo.git
+  247  code .
+  248  wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
+  249  ls -ltr
+  250  wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc
+  251  ls -ltr
+  252  sudo apt-get install gnupg
+  253  wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
+  254  apt-key(8)
+  255  gpg --no-default-keyring --keyring /tmp/mongo-server-6.0.asc --import | wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc
+  256  wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | gpg --no-default-keyring --keyring /tmp/mongo-server-6.0.asc --import
+  257  ls -ltr
+  258  sudo apt-get install gnupg
+  259  ls -la /etc/apt/sources.list
+  260  ls -la /etc/apt/sources.list.d/
+  261  touch /etc/apt/sources.list.d/mongodb-org-6.0.list
+  262  sudo touch /etc/apt/sources.list.d/mongodb-org-6.0.list
+  263  lsb_release -dc
+  264  echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+  265  cat touch /etc/apt/sources.list.d/mongodb-org-6.0.list
+  266  cat /etc/apt/sources.list.d/mongodb-org-6.0.list
+  267  sudo apt-get update
+  268  sudo apt-get install -y mongodb-org
+  269  sudo apt-get install -y mongodb-org=6.0.2 mongodb-org-database=6.0.2 mongodb-org-server=6.0.2 mongodb-org-mongos=6.0.2 mongodb-org-tools=6.0.2
+  270  lsb_release -dc
+  271  echo "deb http://security.ubuntu.com/ubuntu impish-security main" | sudo tee /etc/apt/sources.list.d/impish-security.list
+  272  cat /etc/apt/sources.list.d/impish-security.list 
+  273  sudo apt-get update
+  274  sudo apt-get install libssl1.1
+  275  ls -la
+  276  c d
+  277  cd node-todo/
+  278  ls -la
+  279  git remote add origin https://github.com/kalangosbrasil/AeroAdmin.git
+  280  ls -la
+  281  cd ..
+  282  git remote add origin https://github.com/kalangosbrasil/AeroAdmin.git
+  283  git clone https://github.com/kalangosbrasil/AeroAdmin.git
+  284  cd AeroAdmin/
+  285  ls -la
+  286  git status
+  287  git add *
+  288  git add .
+  289  git status
+  290  git commit "projeto node-todo"
+  291  git commit -m "projeto node-todo"
+  292  git push
+  293  git commit -m "projeto node-todo"
+  294  git push
+  295  npm install
+  296  sudo apt install wget
+  297  wget -q -O - https://www.apache.org/dist/cassandra/KEYS | sudo apt-key add -
+  298  o "deb http://www.apache.org/dist/cassandra/debian 40x main" | sudo tee -a /etc/apt/sources.list.d/cassandra.sources.list deb http://www.apache.org/dist/cassandra/debian 40x main
+  299  echo "deb http://www.apache.org/dist/cassandra/debian 40x main" | sudo tee -a /etc/apt/sources.list.d/cassandra.sources.list deb http://www.apache.org/dist/cassandra/debian 40x main
+  300  sudo apt-get update
+  301  sudo apt install cassandra -y
+  302  sudo systemctl enable cassandra
+  303  sudo systemctl start cassandra
+  304  sudo systemctl status cassandra
+  305  sudo nano /etc/cassandra/cassandra.yaml
+  306  sudo systemctl reload cassandra
+  307  sudo systemctl status cassandra
+  308  sudo systemctl stop cassandra
+  309  sudo systemctl start cassandra
+  310  sudo systemctl status cassandra
+  311  nodetool status
+  312  sudo nano /etc/cassandra/cassandra.yaml
+  313  nodetool 
+  314  nodetool -p 7000
+  315  nodetool status -p 7000
+  316  nodetool gcstats -p 7000
+  317  sudo nodetool status -p 7000
+  318  sudo systemctl status cassandra
+  319  sudo service cassandra status
+  320  java -version
+  321  sudo apt install default-jdk -y
+  322  java -version
+  323  sudo service cassandra restart
+  324  sudo service cassandra status
+  325  nodetool status -p 7000
+  326  nodetool status
+  327  service  --status-all 
+  328  service cassandra restart
+  329  nodetool status
+  330  nodetool status -p 7000
+  331  ls -la
+  332  cd /etc/cassandra/triggers/
+  333  ls -al
+  334  cd ..
+  335  ls- lal
+  336  ls -la
+  337  sudo nano cassandra-env.sh 
+  338  echo $JAVA_VERSION
+  339  javac -version
+  340  sudo nano /etc/environment
+  341  echo $JAVA_VERSION
+  342  echo $JAVA_HOME
+  343  EXI
+  344  exit
+  345  echo $JAVA_HOME
+  346  echo $PATH
+  347  sudo nano /etc/environment
+  348  cat nano /etc/environment
+  349  cd node-todo/
+  350  ls -la
+  351  node
+  352  node server.js 
+  353  npm install
+  354  cd ..
+  355  ls -la
+  356  cd AeroAdmin/
+  357  ls -la
+  358  node server.js 
+  359  echo $PATH
+  360  echo $JAVA_HOME
+  361  ls -la
+  362  cat .fzf.bash 
+  363  cat .fzf/bin/fzf
+  364  clear
+  365  history
+  366  history > history.22-04.txt
