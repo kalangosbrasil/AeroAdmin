@@ -1,14 +1,23 @@
 {
-  "name": "node-todo",
+  "name": "aeroadmin-api",
   "version": "0.0.1",
-  "description": "Simple todo application.",
-  "main": "server.js",
-  "author": "Scotch",
+  "description": "APIS da administração do aeroporto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Bruno Miranda",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  },
   "dependencies": {
     "body-parser": "^1.18.2",
-    "mongoose": "4.10.8",
-    "express": "^4.10.8",
+    "express": "^4.17.1",
+    "express-healthcheck": "^0.1.0",
     "method-override": "^2.3.10",
+    "mongoose": "^5.13.15",
     "morgan": "^1.9.0"
   }
 }

@@ -1,27 +1,47 @@
-// set up ======================================================================
-var express = require('express');
-var app = express(); 						// create our app w/ express
-// var mongoose = require('mongoose'); 				// mongoose for mongodb
-var port = process.env.PORT || 8080; 				// set the port
-// var database = require('./config/database'); 			// load the database config
-var morgan = require('morgan');
-var bodyParser = require('body-parser');
-var methodOverride = require('method-override');
+var express = require('express'), // Call express
+    app = express(), // Define our app using express
+    port = process.env.PORT || 3000, // Set the port
+    mongoose = require('mongoose'), // Call mongoose to interact with a MongoDB(Database) instance
+    Task = require('./api/models/tasksModel'), // Created model loading here
+    Icao = require('./api/models/icaoModel'),
+    bodyParser = require('body-parser'); //Middleware to process incoming request body objects
+  
+// Mongoose instance connection url connection
+mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://localhost/tasksdb'); 
 
-// configuration ===============================================================
-//mongoose.connect(database.remoteUrl); 	// Connect to local MongoDB instance. A remoteUrl is also available (modulus.io)
+/* Configure app to use bodyParser()
+   this will let us get the data from a POST */
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
-app.use(express.static('./public')); 		// set the static files location /public/img will be /img for users
-app.use(morgan('dev')); // log every request to the console
-app.use(bodyParser.urlencoded({'extended': 'true'})); // parse application/x-www-form-urlencoded
-app.use(bodyParser.json()); // parse application/json
-app.use(bodyParser.json({type: 'application/vnd.api+json'})); // parse application/vnd.api+json as json
-app.use(methodOverride('X-HTTP-Method-Override')); // override with the X-HTTP-Method-Override header in the request
+//Importing route
+var routes = require('./api/routes/routes'); 
 
+//Register the route
+routes(app); 
 
-// routes ======================================================================
-require('./app/routes.js')(app);
-
-// listen (start app with node server.js) ======================================
+// Start the server
 app.listen(port);
-console.log("App listening on port " + port);
+console.log('RESTful API demo server started on: ' + port);
+
+// Get an instance of the express Router
+var router = express.Router();
+
+// Health route to make sure everything is working (accessed at GET http://localhost:3000/health)
+app.use('/health', require('express-healthcheck')({
+  healthy: function () {
+      return {
+        message: 'ExpressJS web service is up and running',
+        rc: '200' };
+  }
+}));
+
+// Returning response with 404 when incorrect url is requested 
+app.use(function(req, res) {
+    res.status(404).send({ error: { errors: [ { domain: 'global', reason: 'notFound', message: 'Not Found', 
+                          description: 'Couldn\'t find the requested resource \'' + req.originalUrl + '\'' } ], code: 404, message: 'Not Found' } })
+  });
+
+// All of our routes will be prefixed with /api
+app.use('/api', router);
