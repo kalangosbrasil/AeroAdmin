@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 
-// JSON schema for 
+// JSON schema for ICAO
 var IcaoSchema = new Schema({
   sigla:{
     type: String,
@@ -13,11 +13,11 @@ var IcaoSchema = new Schema({
   },
   nome: {
     type: String,
-    required: 'Insira o nome do Aeroporto'
+    required: 'Insira o nome do aeroporto'
   },
   categoria: {
     type: String,
-    required: 'Kindly enter the category of the task'
+    required: 'Insira a categoria do aeroporto'
   },
   dataCriacao: {
     type: Date,
@@ -28,6 +28,18 @@ var IcaoSchema = new Schema({
       type: String,
       enum: ['Regularizado', 'Com restrições', 'Fechado']
     }]
+  },
+  contato: {
+    responsavel: {
+      nome: String,
+      fone: String,
+      email: string
+    },
+    endereco: {
+      cep: String,
+      rua: String,
+      numero: String
+    }
   }
 });
 
