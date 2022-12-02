@@ -3,7 +3,7 @@ var express = require('express'), // Call express
     port = process.env.PORT || 3000, // Set the port
     mongoose = require('mongoose'), // Call mongoose to interact with a MongoDB(Database) instance
     Task = require('./api/models/tasksModel'), // Created model loading here
-    Icao = require('./api/models/icaoModel'),
+    Icao = require('./api/models/icaoModel')
     bodyParser = require('body-parser'); //Middleware to process incoming request body objects
   
 // Mongoose instance connection url connection
