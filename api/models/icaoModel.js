@@ -28,19 +28,20 @@ var IcaoSchema = new Schema({
       type: String,
       enum: ['Regularizado', 'Com restrições', 'Fechado']
     }]
-  },
-  contato: {
-    responsavel: {
-      nome: String,
-      fone: String,
-      email: string
-    },
-    endereco: {
-      cep: String,
-      rua: String,
-      numero: String
-    }
   }
+  // ,
+  // contato: {
+  //   responsavel: {
+  //     nome: String,
+  //     fone: String,
+  //     email: String
+  //   },
+  //   endereco: {
+  //     cep: String,
+  //     rua: String,
+  //     numero: String
+  //   }
+  // }
 });
 
 module.exports = mongoose.model('Icao', IcaoSchema);

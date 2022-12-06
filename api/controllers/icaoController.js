@@ -16,11 +16,13 @@ Icao = mongoose.model('Icao');
 
 // Create a new task
 exports.createIcao = function(req, res) {
-  var new_icao = new Icao(req.body);
+  var new_icao = new Icao(JSON.stringify(req.body));
   new_icao.save(function(err, icao) {
     if (err) {
+      console.log("### ERRO ###", res.body)
       res.status(400).send(err);
     } else {
+      console.log("###  OK  ###", res.body)
       res.status(201).json(icao);
     }
   });
