@@ -1,6 +1,7 @@
 'use strict';
 var tasksList = require('../controllers/tasksController');
-var icaoList = require('../controllers/icaoController');
+// var icaoList = require('../controllers/icaosController');
+// var userList = require('../controllers/usersController');
 
 
 module.exports = function(app) {
@@ -15,8 +16,11 @@ module.exports = function(app) {
     .delete(tasksList.deleteTaskById);
     // Tasks List Routes
 
-  app.route('/icao')
-    //.get(tasksList.getAllTasks)
-    .post(icaoList.createIcao);
+  // app.route('/icao')
+  //   //.get(tasksList.getAllTasks)
+  //   .post(icaoList.createIcao);
 
+  // app.route('/users')
+  //   .get(userList.getAllUsers)
+  //   .post(userList.createUser);
 };

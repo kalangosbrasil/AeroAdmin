@@ -17,10 +17,12 @@ exports.getAllTasks = function(req, res) {
 // Create a new task
 exports.createTask = function(req, res) {
   var new_task = new Task(req.body);
+  
   new_task.save(function(err, task) {
     if (err) {
       res.status(400).send(err);
     } else {
+      console.log ("Tarefa criada!", JSON.stringify(new_task))
       res.status(201).json(task);
     }
   });
